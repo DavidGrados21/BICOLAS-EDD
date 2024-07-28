@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{151D8BD3-9AC3-402C-833E-795892275C1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laboratorio_7</RootNamespace>
+    <AssemblyName>Laboratorio 7</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EJERCICIO 1\B1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EJERCICIO 1\B1.Designer.cs">
+      <DependentUpon>B1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EJERCICIO 1\Bicola1.cs" />
+    <Compile Include="EJERCICIO 2\B2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EJERCICIO 2\B2.Designer.cs">
+      <DependentUpon>B2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EJERCICIO 2\Bicola2.cs" />
+    <Compile Include="EJERCICIO 3\B3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EJERCICIO 3\B3.Designer.cs">
+      <DependentUpon>B3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EJERCICIO 3\Bicola3.cs" />
+    <Compile Include="EJERCICIO 4\B4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EJERCICIO 4\B4.Designer.cs">
+      <DependentUpon>B4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EJERCICIO 4\Bicola4.cs" />
+    <Compile Include="EJERCICIO 4\NodoS.cs" />
+    <Compile Include="EJERCICIO 5\B5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EJERCICIO 5\B5.Designer.cs">
+      <DependentUpon>B5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EJERCICIO 5\bicola5.cs" />
+    <Compile Include="forms 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms 1.Designer.cs">
+      <DependentUpon>forms 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EJERCICIO 1\B1.resx">
+      <DependentUpon>B1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EJERCICIO 2\B2.resx">
+      <DependentUpon>B2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EJERCICIO 3\B3.resx">
+      <DependentUpon>B3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EJERCICIO 4\B4.resx">
+      <DependentUpon>B4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EJERCICIO 5\B5.resx">
+      <DependentUpon>B5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms 1.resx">
+      <DependentUpon>forms 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
